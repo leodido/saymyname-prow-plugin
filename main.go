@@ -171,7 +171,7 @@ func (s *server) handleIssueComment(l *logrus.Entry, ic github.IssueCommentEvent
 		"body": ic.Comment.Body,
 	})
 	l.Info("handleIssueComment called")
-	if !ic.Issue.IsPullRequest() || ic.Action != github.IssueCommentActionCreated || ic.Issue.State == "closed" {
+	if ic.Action != github.IssueCommentActionCreated || ic.Issue.State == "closed" {
 		return nil
 	}
 
