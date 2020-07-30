@@ -30,12 +30,12 @@ var (
 	command   = "/poiana"
 	commandRe = regexp.MustCompile(`(?mi)^` + command + `\s*$`)
 	replies   = []string{
-		"I'm [Poiana](https://github.com/poiana), I stop the drama!",
-		"I'm [Poiana](https://github.com/poiana), I fly around @falcosecurity projects.",
-		"I'm [Poiana](https://github.com/poiana), for issue with Kubernetes ask to our SRE [fntlnz](https://github.com/fntlnz)."
-		"I'm [Poiana](https://github.com/poiana), I'm here to look at [Kris](https://github.com/kris-nova)'s commit messages...",
-		"I obey my falconer [leodido](https://github.com/leodido].",
-		"[Poiana](https://github.com/poiana) stops the drama!",
+		"**I'm [poiana](https://github.com/poiana), I stop the drama!**",
+		"I'm [poiana](https://github.com/poiana), I fly around Falco projects.",
+		"I'm [poiana](https://github.com/poiana), for issue with Kubernetes ask to [fntlnz](https://github.com/fntlnz).",
+		"I'm [poiana](https://github.com/poiana), I'm here to look at [Kris](https://github.com/kris-nova)'s commit messages...",
+		"I'm [poiana](https://github.com/poiana), I obey my falconer [leodido](https://github.com/leodido).",
+		"**[Poiana](https://github.com/poiana) stops the drama!**",
 	}
 )
 
@@ -73,11 +73,11 @@ func newOptions() *options {
 
 func helpProvider(enabledRepos []config.OrgRepo) (*pluginhelp.PluginHelp, error) {
 	pluginHelp := &pluginhelp.PluginHelp{
-		Description: `This is a Prow external plugin. If you comment "` + command + `" on Github, Prow bot replies ...`,
+		Description: `This is a Prow external plugin. If you comment "` + command + `" on Github, Prow bot replies properly.`,
 	}
 	pluginHelp.AddCommand(pluginhelp.Command{
 		Usage:       command,
-		Description: "Response pong.",
+		Description: "Tells you who it is!",
 		WhoCanUse:   "Anyone",
 		Examples:    []string{command},
 	})
@@ -157,7 +157,7 @@ func (s *server) handleEvent(eventType, eventGUID string, payload []byte) error 
 		}
 		go func() {
 			if err := s.handleIssueComment(l, ic); err != nil {
-				s.log.WithError(err).WithFields(l.Data).Info("Refreshing github statuses failed.")
+				s.log.WithError(err).WithFields(l.Data).Info("Error handling event.")
 			}
 		}()
 	default:
