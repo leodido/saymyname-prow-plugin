@@ -32,6 +32,7 @@ var (
 	replies   = []string{
 		"I'm [Poiana](https://github.com/poiana), I stop the drama!",
 		"I'm [Poiana](https://github.com/poiana), I fly around @falcosecurity projects.",
+		"I'm [Poiana](https://github.com/poiana), for issue with Kubernetes ask to our SRE [fntlnz](https://github.com/fntlnz)."
 		"I'm [Poiana](https://github.com/poiana), I'm here to look at [Kris](https://github.com/kris-nova)'s commit messages...",
 		"I obey my falconer [leodido](https://github.com/leodido].",
 		"[Poiana](https://github.com/poiana) stops the drama!",
