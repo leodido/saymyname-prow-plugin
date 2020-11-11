@@ -8,6 +8,8 @@ This is a [Prow](https://github.com/kubernetes/test-infra/tree/master/prow) [ext
 
 You can learn about Prow external plugins from below links:
 
+- [Going Beyond CI/CD with Prow at KubeCon EU 2020 (video)](https://youtu.be/qQvoImxHydk?t=1554)
+- [Going Beyond CI/CD with Prow at KubeCon EU 2020 (slides)](https://speakerdeck.com/leodido/cd-with-prow)
 - [custom external plugin](https://github.com/kubernetes/test-infra/tree/master/prow/plugins#external-plugins)
 - [in-cluster plugins](https://github.com/kubernetes/test-infra/tree/master/prow/plugins)
 - [official external plugins](https://github.com/kubernetes/test-infra/tree/master/prow/external-plugins)
