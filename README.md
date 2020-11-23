@@ -41,3 +41,7 @@ external_plugins:
   - [ ] Slash command
   - [ ] Sentences set
 - [ ] Test it with [phony](https://github.com/kubernetes/test-infra/tree/master/prow/cmd/phony#phony)
+
+---
+
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/saymyname-prow-plugin?flat)](https://github.com/igrigorik/ga-beacon)
