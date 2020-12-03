@@ -36,6 +36,7 @@ var (
 		"I'm [poiana](https://github.com/poiana), I'm here to look at [Kris](https://github.com/kris-nova)'s commit messages...",
 		"I'm [poiana](https://github.com/poiana), I obey my falconer [leodido](https://github.com/leodido).",
 		"**[Poiana](https://github.com/poiana) stops the drama!**",
+		"More [Falco](https://github.com/falcosecurity/falco) less 🍍",
 	}
 )
 
